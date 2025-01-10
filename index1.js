@@ -6,4 +6,5 @@ admin.initializeApp({
     databaseURL: "https://your-database-name.firebaseio.com" // Replace with your database URL
 });
 
+
 console.log("Firebase is initialized!");
