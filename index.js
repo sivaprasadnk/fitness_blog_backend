@@ -21,7 +21,7 @@ app.get('/recent-posts', (req, res) => {
     var data = [
         {
             'id': '1',
-            'date': Date(2025, 0, 1),
+            'dateString': 'Jan 2, 2025',
             'title': "Sleep Smarter: Unlock Peak Health and Performance",
             'subTitle': "Sleep is more than just rest; it's a vital component of your physical and mental well-being. Quality sleep improves recovery, sharpens focus, and balances your energy for the day ahead. Without it, even the best fitness routines can fall short.",
             'content': `
@@ -69,8 +69,8 @@ Tips to Improve Sleep Quality
 app.get('/featured-post', (req, res) => {
     var data =
     {
-        'id': '1',
-        'date': Date(2025, 0, 1),
+        'id': 1,
+        'dateString': 'Jan 1, 2025',
         'title': "Sleep Smarter: Unlock Peak Health and Performance",
         'subTitle': "Sleep is more than just rest; it's a vital component of your physical and mental well-being. Quality sleep improves recovery, sharpens focus, and balances your energy for the day ahead. Without it, even the best fitness routines can fall short.",
         'content': `
