@@ -51,7 +51,54 @@ Tips to Improve Sleep Quality
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image1.jpg?alt=media&token=f85eaabd-609e-41dc-8d74-b65aaac6100a",
             'isActive': "Y",
         },
-        // {
+        {
+            'id': 3,
+            'date': "Jan 3, 2025",
+            'title': "Sleep and Obesity: The Hidden Link You Must Know",
+            'subTitle': "Sleep is often overlooked in the journey to maintaining a healthy weight. However, research consistently shows a strong connection between sleep and obesity. Lack of adequate sleep disrupts hormones that regulate hunger and metabolism, making it harder to maintain a healthy weight. Additionally, poor sleep can lead to increased cravings for high-calorie, unhealthy foods, further complicating weight management efforts.",
+            'content': `
+Here's how insufficient or poor-quality sleep can impact your weight:
+
+#### 1. **Hormonal Imbalances**
+
+Lack of sleep disrupts the balance of hunger hormones:
+
+- **Leptin**: This hormone signals fullness to your brain. Sleep deprivation lowers leptin levels, making you feel less satisfied after eating.
+- **Ghrelin**: Known as the "hunger hormone," ghrelin levels increase with poor sleep, leading to increased appetite and cravings.
+
+#### 2. **Increased Cravings for Unhealthy Foods**
+
+Sleep-deprived individuals often crave high-calorie, sugary, and fatty foods. This is because sleep loss affects the brain's reward system, making unhealthy foods more appealing.
+
+#### 3. **Reduced Energy and Activity Levels**
+
+Poor sleep leads to fatigue, reducing your motivation to exercise or stay active. Lower physical activity means fewer calories burned, contributing to weight gain.
+
+#### 4. **Disrupted Metabolism**
+
+Insufficient sleep affects how your body processes glucose, increasing the risk of insulin resistance and weight gain. Over time, this can contribute to conditions like diabetes and obesity.
+
+#### 5. **Supports Physical Recovery**
+
+Sleep plays a crucial role in repairing and recovering the body. During deep sleep stages, your body works to repair muscles, tissues, and cells damaged during daily activities or workouts. This recovery process helps maintain physical health and improves overall energy levels.
+
+Insufficient sleep affects how your body processes glucose, increasing the risk of insulin resistance and weight gain. Over time, this can contribute to conditions like diabetes and obesity.
+
+### Tips to Break the Cycle
+
+If you're struggling with weight and suspect poor sleep is a factor, consider these tips:
+
+1. **Prioritize Sleep Hygiene**: Maintain a consistent sleep schedule, and create a relaxing bedtime routine.
+2. **Manage Stress**: Practice relaxation techniques such as meditation or deep breathing to improve sleep quality.
+3. **Limit Late-Night Snacking**: Avoid eating heavy meals or sugary snacks close to bedtime.
+4. **Be Physically Active**: Regular exercise promotes better sleep and helps manage weight.
+5. **Seek Professional Help**: If sleep issues persist, consult a healthcare provider to address underlying problems like sleep apnea.            
+            `,
+            'imageAssetPath': "assets/images/image3.jpg",
+            'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image3.jpg?alt=media&token=a59cebae-d8ec-4f04-9475-f89383a7eeb8",
+            'isActive': "Y",
+        },
+        // // {
         //     'id': '3',
         //     'date': "",
         //     'title': "",
