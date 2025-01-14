@@ -53,7 +53,7 @@ Tips to Improve Sleep Quality
         },
         {
             'id': 3,
-            'date': "Jan 3, 2025",
+            'dateString': "Jan 3, 2025",
             'title': "Sleep and Obesity: The Hidden Link You Must Know",
             'subTitle': "Sleep is often overlooked in the journey to maintaining a healthy weight. However, research consistently shows a strong connection between sleep and obesity. Lack of adequate sleep disrupts hormones that regulate hunger and metabolism, making it harder to maintain a healthy weight. Additionally, poor sleep can lead to increased cravings for high-calorie, unhealthy foods, further complicating weight management efforts.",
             'content': `
@@ -100,11 +100,12 @@ If you're struggling with weight and suspect poor sleep is a factor, consider th
         },
         // // {
         //     'id': '3',
-        //     'date': "",
+        //     'dateString': "",
         //     'title': "",
         //     'subTitle': "",
         //     'content': "",
-        //     'imagePath': "",
+        //     'imageAssetPath': "",
+        //     'imageNetworkPath': "",
         //     'isActive': "Y",
         // },
     ];
