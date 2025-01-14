@@ -47,7 +47,7 @@ Tips to Improve Sleep Quality
 
 5. Watch Your Diet: Avoid heavy meals, caffeine, and alcohol close to bedtime.
             `,
-            'imageAssetPath': 'assets/images/1.jpg',
+            'imageAssetPath': 'assets/images/image1.jpg',
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image1.jpg?alt=media&token=f85eaabd-609e-41dc-8d74-b65aaac6100a",
             'isActive': "Y",
         },
@@ -97,7 +97,7 @@ Tips to Improve Sleep Quality
 
 5. Watch Your Diet: Avoid heavy meals, caffeine, and alcohol close to bedtime.
             `,
-        'imageAssetPath': 'assets/images/1.jpg',
+        'imageAssetPath': 'assets/images/image1.jpg',
         'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image1.jpg?alt=media&token=f85eaabd-609e-41dc-8d74-b65aaac6100a",
         'isActive': "Y",
     }
