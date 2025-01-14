@@ -98,8 +98,47 @@ If you're struggling with weight and suspect poor sleep is a factor, consider th
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image3.jpg?alt=media&token=a59cebae-d8ec-4f04-9475-f89383a7eeb8",
             'isActive': "Y",
         },
+        {
+            'id': 2,
+            'dateString': "Jan 4, 2025",
+            'title': "7 Secrets to Building a Sustainable Fitness Lifestyle",
+            'subTitle': "Adopting a fitness lifestyle goes beyond crash diets or temporary workout routines. It's about building habits that stick and enhance your overall well-being. It requires patience, self-discipline, and a commitment to personal growth.",
+            'content': `
+Here are seven secrets to crafting a sustainable fitness lifestyle:
+1. Set Realistic Goals
+
+Start small and focus on attainable goals. Instead of aiming to lose 10 kg in a month, strive for steady progress like losing 1-2 kg per week. Setting realistic expectations prevents burnout and boosts long-term success.
+
+2. Find Your Motivation
+
+Identify your 'why.' Whether it's improving your health, boosting your energy, or feeling confident, knowing your reason keeps you driven. Write it down and revisit it during tough days.
+
+3. Consistency is Key
+
+Consistency beats intensity over time. Aim for regular workouts and balanced meals rather than sporadic bursts of extreme efforts. Find a schedule that fits your life and stick to it.
+
+4. Make Fitness Enjoyable
+
+Choose activities you love. Whether it's dancing, swimming, cycling, or lifting weights, enjoying the process makes it easier to stay committed. Experiment until you find what lights you up.
+
+5. Fuel Your Body Right
+
+Nutrition is as important as exercise. Focus on whole, nutrient-dense foods. Include lean proteins, healthy fats, and complex carbs in your meals. Stay hydrated and limit processed foods.
+
+6. Prioritize Recovery
+
+Rest days are vital for muscle repair and overall health. Incorporate stretching, foam rolling, and quality sleep into your routine. Listen to your body and avoid overtraining.
+
+7. Track Your Progress
+
+Keep track of your workouts, meals, and milestones. Use apps or journals to monitor your journey. Seeing progress—even small wins—can be incredibly motivating.            
+            `,
+            'imageAssetPath': "assets/images/image2.jpg",
+            'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image2.jpg?alt=media&token=2afd2adf-61ce-4410-b7c8-bb1abddcd7bd",
+            'isActive': "Y",
+        },
         // // {
-        //     'id': '3',
+        //     'id': 2,
         //     'dateString': "",
         //     'title': "",
         //     'subTitle': "",
