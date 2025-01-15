@@ -47,9 +47,12 @@ Tips to Improve Sleep Quality
 
 5. Watch Your Diet: Avoid heavy meals, caffeine, and alcohol close to bedtime.
             `,
+            "tags": [
+                "Sleep",
+            ],
             'imageAssetPath': 'assets/images/image1.jpg',
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image1.jpg?alt=media&token=f85eaabd-609e-41dc-8d74-b65aaac6100a",
-            'isActive': "Y",
+            'isActive': "N",
         },
         {
             'id': 3,
@@ -94,6 +97,9 @@ If you're struggling with weight and suspect poor sleep is a factor, consider th
 4. **Be Physically Active**: Regular exercise promotes better sleep and helps manage weight.
 5. **Seek Professional Help**: If sleep issues persist, consult a healthcare provider to address underlying problems like sleep apnea.            
             `,
+            "tags": [
+                "Sleep",
+            ],
             'imageAssetPath': "assets/images/image3.jpg",
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image3.jpg?alt=media&token=a59cebae-d8ec-4f04-9475-f89383a7eeb8",
             'isActive': "Y",
@@ -133,16 +139,22 @@ Rest days are vital for muscle repair and overall health. Incorporate stretching
 
 Keep track of your workouts, meals, and milestones. Use apps or journals to monitor your journey. Seeing progress—even small wins—can be incredibly motivating.            
             `,
+            "tags": [
+                "Lifestyle",
+            ],
             'imageAssetPath': "assets/images/image2.jpg",
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image2.jpg?alt=media&token=2afd2adf-61ce-4410-b7c8-bb1abddcd7bd",
             'isActive': "Y",
         },
         // // {
         //     'id': 2,
-        //     'dateString': "",
+        //     'dateString': "Jan 3, 2025",
         //     'title': "",
         //     'subTitle': "",
         //     'content': "",
+        //     "tags":[
+        //           "Sleep",
+        //      ],
         //     'imageAssetPath': "",
         //     'imageNetworkPath': "",
         //     'isActive': "Y",
