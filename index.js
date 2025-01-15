@@ -201,6 +201,93 @@ Track Your Progress: Use fitness apps or journals to monitor your achievements a
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image5.jpg?alt=media&token=ee03c01d-7504-4a21-909e-01d5e62a7750",
             'isActive': "Y",
         },
+        {
+            'id': 6,
+            'dateString': "Jan 10, 2025",
+            'title': "Nourish to Flourish: The Essential Guide to a Balanced Diet",
+            'subTitle': "A balanced diet is the foundation of a healthy lifestyle. It not only fuels your workouts but also ensures your body gets the essential nutrients it needs to function optimally. Whether your goal is weight management, muscle gain, or simply staying healthy, a thoughtful approach to your diet can make all the difference.",
+            'content': `
+Why Diet Matters
+
+Your diet plays a crucial role in:
+
+Providing Energy: Supplying the fuel your body needs for daily activities and exercise.
+
+Supporting Recovery: Helping repair muscles and tissues post-workout.
+
+Boosting Immunity: Strengthening your body's defenses against illnesses.
+
+Improving Mental Clarity: Enhancing focus, memory, and overall brain function.
+
+Components of a Balanced Diet
+
+1. Proteins
+
+Proteins are the building blocks of the body. They help in muscle repair and growth. Include sources like:
+
+Lean meats (chicken, turkey, fish)
+
+Plant-based proteins (tofu, lentils, chickpeas)
+
+Dairy products (yogurt, cheese, milk)
+
+Eggs and nuts
+
+2. Carbohydrates
+
+Carbs are your body's primary energy source. Choose complex carbs like:
+
+Whole grains (brown rice, quinoa, oats)
+
+Vegetables (sweet potatoes, broccoli, carrots)
+
+Legumes (beans, lentils)
+
+3. Fats
+
+Healthy fats are essential for hormone regulation and brain health. Opt for:
+
+Avocados
+
+Nuts and seeds
+
+Olive oil
+
+Fatty fish (salmon, mackerel)
+
+4. Vitamins and Minerals
+
+These micronutrients support various bodily functions. Include:
+
+Fruits (berries, oranges, bananas)
+
+Vegetables (spinach, kale, bell peppers)
+
+Nuts and seeds for trace minerals
+
+5. Hydration
+
+Water is vital for every function in your body. Aim to drink at least 8 glasses a day and adjust based on activity levels.
+
+Tips for Maintaining a Healthy Diet
+
+Plan Your Meals: Prepare meals in advance to avoid unhealthy last-minute choices.
+
+Practice Portion Control: Overeating even healthy foods can lead to weight gain.
+
+Listen to Your Body: Eat when you're hungry and stop when you're full.
+
+Limit Processed Foods: Avoid foods high in sugar, salt, and unhealthy fats.
+
+Stay Consistent: A single cheat meal won't derail your progress, but consistency is key.            
+            `,
+            "tags": [
+                "Diet",
+            ],
+            'imageAssetPath': "assets/images/image6.jpg",
+            'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image6.jpg?alt=media&token=7c4c76cc-de12-446a-87a8-883c7b8085b7",
+            'isActive': "Y",
+        },
         // // {
         //     'id': 2,
         //     'dateString': "Jan 3, 2025",
