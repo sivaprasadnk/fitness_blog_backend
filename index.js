@@ -195,7 +195,7 @@ Listen to Your Body: Avoid overtraining and rest when needed. Recovery is just a
 Track Your Progress: Use fitness apps or journals to monitor your achievements and stay motivated.            
             `,
             "tags": [
-                "Workout",
+                "Workout"
             ],
             'imageAssetPath': "assets/images/image5.jpg",
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image5.jpg?alt=media&token=ee03c01d-7504-4a21-909e-01d5e62a7750",
