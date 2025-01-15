@@ -286,7 +286,7 @@ Stay Consistent: A single cheat meal won't derail your progress, but consistency
             ],
             'imageAssetPath': "assets/images/image6.jpg",
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image6.jpg?alt=media&token=7c4c76cc-de12-446a-87a8-883c7b8085b7",
-            'isActive': "Y",
+            'isActive': "N",
         },
         // // {
         //     'id': 2,
