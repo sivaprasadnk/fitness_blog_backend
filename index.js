@@ -36,6 +36,8 @@ app.get('/version', async (req, res) => {
 
 
 app.get('/posts', (req, res) => {
+    console.log("posts logg");
+
     var data = [
         {
             'id': 1,
