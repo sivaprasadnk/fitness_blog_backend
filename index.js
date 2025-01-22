@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 
-app.get('/recent-posts', (req, res) => {
+app.get('/posts', (req, res) => {
     var data = [
         {
             'id': 1,
@@ -53,6 +53,7 @@ Tips to Improve Sleep Quality
             'imageAssetPath': 'assets/images/image1.jpg',
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image1.jpg?alt=media&token=f85eaabd-609e-41dc-8d74-b65aaac6100a",
             'isActive': "N",
+            'isFeatured': "N",
         },
         {
             'id': 3,
@@ -103,6 +104,7 @@ If you're struggling with weight and suspect poor sleep is a factor, consider th
             'imageAssetPath': "assets/images/image3.jpg",
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image3.jpg?alt=media&token=a59cebae-d8ec-4f04-9475-f89383a7eeb8",
             'isActive': "Y",
+            'isFeatured': "N",
         },
         {
             'id': 2,
@@ -145,6 +147,7 @@ Keep track of your workouts, meals, and milestones. Use apps or journals to moni
             'imageAssetPath': "assets/images/image2.jpg",
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image2.jpg?alt=media&token=2afd2adf-61ce-4410-b7c8-bb1abddcd7bd",
             'isActive': "Y",
+            'isFeatured': "N",
         },
         {
             'id': 5,
@@ -200,6 +203,7 @@ Track Your Progress: Use fitness apps or journals to monitor your achievements a
             'imageAssetPath': "assets/images/image5.jpg",
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image5.jpg?alt=media&token=ee03c01d-7504-4a21-909e-01d5e62a7750",
             'isActive': "Y",
+            'isFeatured': "N",
         },
         {
             'id': 6,
@@ -287,6 +291,7 @@ Stay Consistent: A single cheat meal won't derail your progress, but consistency
             'imageAssetPath': "assets/images/image6.jpg",
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image6.jpg?alt=media&token=7c4c76cc-de12-446a-87a8-883c7b8085b7",
             'isActive': "N",
+            'isFeatured': "Y",
         },
         // // {
         //     'id': 2,
@@ -300,6 +305,7 @@ Stay Consistent: A single cheat meal won't derail your progress, but consistency
         //     'imageAssetPath': "assets/images/image1.jpg",
         //     'imageNetworkPath': "",
         //     'isActive': "Y",
+        //     'isFeatured': "N",
         // },
     ];
     var body = {
@@ -308,55 +314,55 @@ Stay Consistent: A single cheat meal won't derail your progress, but consistency
     res.send(body);
 });
 
-app.get('/featured-post', (req, res) => {
-    var data =
-    {
-        'id': 1,
-        'dateString': 'Jan 1, 2025',
-        'title': "Sleep Smarter: Unlock Peak Health and Performance",
-        'subTitle': "Sleep is more than just rest; it's a vital component of your physical and mental well-being. Quality sleep improves recovery, sharpens focus, and balances your energy for the day ahead. Without it, even the best fitness routines can fall short.",
-        'content': `
-            Sleep is a cornerstone of a healthy lifestyle. Here's why it matters:
+// app.get('/featured-post', (req, res) => {
+//     var data =
+//     {
+//         'id': 1,
+//         'dateString': 'Jan 1, 2025',
+//         'title': "Sleep Smarter: Unlock Peak Health and Performance",
+//         'subTitle': "Sleep is more than just rest; it's a vital component of your physical and mental well-being. Quality sleep improves recovery, sharpens focus, and balances your energy for the day ahead. Without it, even the best fitness routines can fall short.",
+//         'content': `
+//             Sleep is a cornerstone of a healthy lifestyle. Here's why it matters:
 
-1. Supports Recovery: During sleep, your body repairs muscles and tissues, helping you recover from workouts and daily stress.
+// 1. Supports Recovery: During sleep, your body repairs muscles and tissues, helping you recover from workouts and daily stress.
 
-2. Boosts Mental Health: Adequate sleep improves mood, reduces stress, and enhances cognitive functions like focus and decision-making.
+// 2. Boosts Mental Health: Adequate sleep improves mood, reduces stress, and enhances cognitive functions like focus and decision-making.
 
-3. Regulates Appetite: Poor sleep can disrupt hunger hormones, leading to overeating and unhealthy food choices.
+// 3. Regulates Appetite: Poor sleep can disrupt hunger hormones, leading to overeating and unhealthy food choices.
 
-4. Enhances Performance: Quality sleep boosts energy, stamina, and overall performance in physical activities.
+// 4. Enhances Performance: Quality sleep boosts energy, stamina, and overall performance in physical activities.
 
-Tips to Improve Sleep Quality
+// Tips to Improve Sleep Quality
 
-1. Stick to a Consistent Schedule: Going to bed and waking up at the same time every day helps regulate your body's internal clock.
+// 1. Stick to a Consistent Schedule: Going to bed and waking up at the same time every day helps regulate your body's internal clock.
 
-2. Create a Relaxing Bedtime Routine: Engage in calming activities such as reading, meditating, or taking a warm bath before bed.
+// 2. Create a Relaxing Bedtime Routine: Engage in calming activities such as reading, meditating, or taking a warm bath before bed.
 
-3. Limit Screen Time: Avoid screens at least an hour before bedtime, as blue light can interfere with your sleep cycle.
+// 3. Limit Screen Time: Avoid screens at least an hour before bedtime, as blue light can interfere with your sleep cycle.
 
-4. Optimize Your Sleep Environment: Ensure your bedroom is cool, dark, and quiet for a better sleep experience.
+// 4. Optimize Your Sleep Environment: Ensure your bedroom is cool, dark, and quiet for a better sleep experience.
 
-5. Watch Your Diet: Avoid heavy meals, caffeine, and alcohol close to bedtime.
-            `,
-        'imageAssetPath': 'assets/images/image1.jpg',
-        'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image1.jpg?alt=media&token=f85eaabd-609e-41dc-8d74-b65aaac6100a",
-        'isActive': "Y",
-    }
-        // {
-        //     'id': '3',
-        //     'date': "",
-        //     'title': "",
-        //     'subTitle': "",
-        //     'content': "",
-        //     'imagePath': "",
-        //     'isActive': "Y",
-        // },
-        ;
-    var body = {
-        'data': data
-    }
-    res.send(body);
-});
+// 5. Watch Your Diet: Avoid heavy meals, caffeine, and alcohol close to bedtime.
+//             `,
+//         'imageAssetPath': 'assets/images/image1.jpg',
+//         'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image1.jpg?alt=media&token=f85eaabd-609e-41dc-8d74-b65aaac6100a",
+//         'isActive': "Y",
+//     }
+//         // {
+//         //     'id': '3',
+//         //     'date': "",
+//         //     'title': "",
+//         //     'subTitle': "",
+//         //     'content': "",
+//         //     'imagePath': "",
+//         //     'isActive': "Y",
+//         // },
+//         ;
+//     var body = {
+//         'data': data
+//     }
+//     res.send(body);
+// });
 
 
 
