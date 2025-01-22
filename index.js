@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 app.get('/version', async (req, res) => {
     const { data, error } = await supabase
         .from('version')
-        .select()
+        .select('*')
     res.send(data);
 });
 
