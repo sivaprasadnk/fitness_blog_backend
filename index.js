@@ -25,9 +25,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/version', async (req, res) => {
+    console.log("version logg");
     const { data, error } = await supabase
         .from('version')
-        .select('*')
+        .select('*');
+    console.log("version :", data);
     if (error) return res.status(400).json({ error: error.message });
     res.status(200).json(data);
 });
