@@ -1,13 +1,12 @@
 const express = require('express');
 const cors = require('cors');
-import { createClient } from '@supabase/supabase-js';
 
 const app = express();
 
-const supabase = createClient({
-    apiKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFlaWRrdmZmeW9manlwZmVyeWduIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc1NDI0OTYsImV4cCI6MjA1MzExODQ5Nn0.r8SL77s-B3dszADC2BsD2pjLXag-K9OTMC3CQUKiQiI',
-    project: 'qeidkvffyofjypferygn'
-});
+// const supabase = createClient({
+//     apiKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFlaWRrdmZmeW9manlwZmVyeWduIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc1NDI0OTYsImV4cCI6MjA1MzExODQ5Nn0.r8SL77s-B3dszADC2BsD2pjLXag-K9OTMC3CQUKiQiI',
+//     project: 'qeidkvffyofjypferygn'
+// });
 // Use the PORT environment variable if it exists, otherwise use 3000
 const port = process.env.PORT || 3000;
 
@@ -22,12 +21,12 @@ app.get('/', (req, res) => {
     res.send(body);
 });
 
-app.get('/version', async (req, res) => {
-    const { data, error } = await supabase
-        .from('version')
-        .select()
-    res.send(data);
-});
+// app.get('/version', async (req, res) => {
+//     const { data, error } = await supabase
+//         .from('version')
+//         .select()
+//     res.send(data);
+// });
 
 
 app.get('/posts', (req, res) => {
