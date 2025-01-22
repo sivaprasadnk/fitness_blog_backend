@@ -290,7 +290,7 @@ Stay Consistent: A single cheat meal won't derail your progress, but consistency
             ],
             'imageAssetPath': "assets/images/image6.jpg",
             'imageNetworkPath': "https://firebasestorage.googleapis.com/v0/b/fitness-thoughts-bac27.firebasestorage.app/o/image6.jpg?alt=media&token=7c4c76cc-de12-446a-87a8-883c7b8085b7",
-            'isActive': "N",
+            'isActive': "Y",
             'isFeatured': "Y",
         },
         // // {
@@ -309,9 +309,15 @@ Stay Consistent: A single cheat meal won't derail your progress, but consistency
         // },
     ];
     var body = {
-        'data': data
+        'data': data,
     }
     res.send(body);
+});
+
+app.get("/version", (req, resp) => {
+    resp.send({
+        "latest": 7,
+    });
 });
 
 // app.get('/featured-post', (req, res) => {
