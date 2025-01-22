@@ -21,12 +21,12 @@ app.get('/', (req, res) => {
     res.send(body);
 });
 
-// app.get('/version', async (req, res) => {
-//     const { data, error } = await supabase
-//         .from('version')
-//         .select()
-//     res.send(data);
-// });
+app.get('/version', async (req, res) => {
+    const { data, error } = await supabase
+        .from('version')
+        .select()
+    res.send(data);
+});
 
 
 app.get('/posts', (req, res) => {
