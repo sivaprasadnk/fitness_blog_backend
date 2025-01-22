@@ -28,7 +28,7 @@ app.get('/version', async (req, res) => {
     const { data, error } = await supabase
         .from('version')
         .select('*')
-    res.send(data);
+    res.status(200).json(data);
 });
 
 
