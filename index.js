@@ -1,14 +1,16 @@
 const express = require('express');
 const cors = require('cors');
 const { createClient } = require('@supabase/supabase-js');
+
 const app = express();
 
-// const supabase = createClient({
-//     apiKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFlaWRrdmZmeW9manlwZmVyeWduIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc1NDI0OTYsImV4cCI6MjA1MzExODQ5Nn0.r8SL77s-B3dszADC2BsD2pjLXag-K9OTMC3CQUKiQiI',
-//     project: 'qeidkvffyofjypferygn'
-// });
 
-const supabase = createClient('https://qeidkvffyofjypferygn.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFlaWRrdmZmeW9manlwZmVyeWduIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc1NDI0OTYsImV4cCI6MjA1MzExODQ5Nn0.r8SL77s-B3dszADC2BsD2pjLXag-K9OTMC3CQUKiQiI');
+// Supabase project details
+const SUPABASE_URL = 'https://qeidkvffyofjypferygn.supabase.co'; // Replace with your Supabase project URL
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFlaWRrdmZmeW9manlwZmVyeWduIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc1NDI0OTYsImV4cCI6MjA1MzExODQ5Nn0.r8SL77s-B3dszADC2BsD2pjLXag-K9OTMC3CQUKiQiI'; // Replace with your Supabase public anon key
+
+// Initialize Supabase client
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // Use the PORT environment variable if it exists, otherwise use 3000
 const port = process.env.PORT || 3000;
@@ -30,6 +32,16 @@ app.get('/version', async (req, res) => {
         .from('version')
         .select('*');
     console.log("version :", data);
+    if (error) return res.status(400).json({ error: error.message });
+    res.status(200).json(data);
+});
+
+
+app.get('/blogs', async (req, res) => {
+    console.log("blogs logg");
+    const { data, error } = await supabase
+        .from('blogs')
+        .select('*');
     if (error) return res.status(400).json({ error: error.message });
     res.status(200).json(data);
 });
