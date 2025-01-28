@@ -41,8 +41,26 @@ app.get('/blogs', async (req, res) => {
     console.log("blogs logg");
     const { data, error } = await supabase
         .from('blogs')
-        .select('*');
+        .select('id', "title", "sub_title", "image_asset_path", "image_network_path", "is_active", "is_featured", "date_string");
     if (error) return res.status(400).json({ error: error.message });
+    res.status(200).json(data);
+});
+
+app.get('/blogs/:id', async (req, res) => {
+    console.log("Fetching blog with ID:", req.params.id);
+    const blogId = req.params.id;
+
+    const { data, error } = await supabase
+        .from('blogs')
+        .select("*")
+        .eq('id', blogId)
+        .single(); // Fetch only one record
+
+    if (error) {
+        console.error("Error fetching blog:", error.message);
+        return res.status(400).json({ error: error.message });
+    }
+
     res.status(200).json(data);
 });
 
