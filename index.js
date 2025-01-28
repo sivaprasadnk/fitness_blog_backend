@@ -41,7 +41,7 @@ app.get('/blogs', async (req, res) => {
     console.log("blogs logg");
     const { data, error } = await supabase
         .from('blogs')
-        .select('id, title, sub_tile, image_asset_path, image_network_path, is_active, is_featured, date_string');
+        .select('id, title, sub_title, image_asset_path, image_network_path, is_active, is_featured, date_string');
     if (error) return res.status(400).json({ error: error.message });
     res.status(200).json(data);
 });
