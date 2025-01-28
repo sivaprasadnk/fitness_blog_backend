@@ -46,7 +46,7 @@ app.get('/blogs', async (req, res) => {
     res.status(200).json(data);
 });
 
-app.get('/blogs/:id', async (req, res) => {
+app.get('/blog/:id', async (req, res) => {
     console.log("Fetching blog with ID:", req.params.id);
     const blogId = req.params.id;
 
